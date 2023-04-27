@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 70%;
+    margin: 0 auto;
+}   
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#alinhar{
+    text-align: center;
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+nav a:hover{
+    background-color: rgba(0, 0, 0, 0.678);
+    color: rgb(202, 207, 216);
+}
+
+header{
+    background-color: rgb(255, 247, 236);
+    text-align: center;
+    height: 230px;
+    padding-top: 60px;
+
+}
+
+header h1{
+    color: rgb(146, 45, 45);
+}
+
+header h2{
+    color: rgb(156, 112, 112);
+}
+
+.fundo-cinza{
+    background-color: rgb(174, 179, 184);
+}
+
+section{
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(216, 216, 216));
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .flex-container{           
+        flex-direction: column;
+        text-align: center;
+    }
+    section{           
+        flex-direction: column;
+        text-align: center;
+    }
+    header{           
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{           
+        flex-direction: column;
+        text-align: center;
+    }   
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    margin: 8px 0;
+    border: 1px solid;
+}
+
+input[type=date]{
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+form{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+input[type=reset], input[type=submit]{
+    background-color: rgb(117, 89, 180);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 2px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=reset]:hover, input[type=submit]:hover{
+    background-color: rgb(81, 41, 175);
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">>
+<html>
+    <head>
+      <meta charset = "utf-8">
+      <title> Layout </title>
+      <style>
+        *{
+          box-sizing: border-box;
+        }
+
+        body{
+          font-family: Arial;
+          margin: 0 auto;
+          width: 70%;
+        }
+
+        .header > h1,h2{
+          color: rgb(0, 0, 0);
+          font-family: Arial;
+          margin: 0;
+        }
+
+        .header{
+          height: 250px;
+          background-color: rgb(153, 240, 145);
+          color: rgb(0, 0, 0);
+          text-align: center;
+          border: 1px solid;
+          border-radius: 10px;
+          padding: 60px;
+        }
+        nav{
+          background-color: rgba(255, 255, 255, 0.747);
+          border-radius: 8px;
+          border: 1px solid;
+        }
+        .flex-container{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+        nav a{
+          color: rgb(0, 0, 0);
+          padding: 12px 18px;
+          text-decoration: none;
+        }
+        nav a:hover{
+          background-color: rgba(0, 0, 0, 0.678);
+          color: rgb(202, 207, 216);
+        }
+        .side{
+          padding: 20px;
+          font-size: 15px;
+          background-color: rgb(98, 173, 161);
+          flex: 30%;
+          text-align: left;
+          width: auto;
+        }
+
+        .footer{
+          background-color: rgb(153, 240, 145);
+          font-size: 15px;
+          text-align: center;
+          margin-top: 6px;
+          padding: 15px;
+        }
+
+        .fakeimg{
+          background-color: rgb(255, 255, 255);
+          width: 100%;
+          padding: 20px;
+        }
+
+        @media screen and (max-width: 700px){
+            .flex-container, .flex-container2{
+                flex-direction: column;
+            }  
+        }
+
+        .main{
+          flex: 70%;
+          background-color: rgb(153, 240, 145);
+          padding: 20px;
+          width: 100%;
+          text-align: center;
+        }
+
+        .row{  
+          display: flex;
+          flex-wrap: wrap;
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="header">
+        <h1> Meu Site </h1>
+        <h2> Criando layout </h2>
+      </div>
+
+      <nav class="flex-container">
+        <a href="#"> Link1 </a>
+        <a href="#"> Link2 </a>
+        <a href="#"> Link3 </a>
+        <a href="#"> Link4 </a>
+      </nav>
+
+      <div class="row">
+        <div class="side">
+          <h2> Meu Perfil </h2>
+          <h5> Foto: </h5>
+          <div class="fakeimg" style="height:200px;">img</div>
+          <p>fotos meramente ilustrativas..</p>
+          <h3> Preenchendo perfil </h3>
+          <p>Nome.</p>
+          <div class="fakeimg" style="height: 60px;">img</div>
+          <div class="fakeimg" style="height: 60px;">img</div>
+          <div class="fakeimg" style="height: 60px;">img</div>
+        </div>
+      </div>
+      <div class="main">
+          <h2> Estoria de Vida </h2>
+          <h5> Era uma vez um cachorro que tinha duas patas e andava de cadeira de rodas.</h5>
+          <div class="fakeimg" style="height:200px;">img</div>
+          <p>kkkkkkkkkkkk..</p>
+          <p>kkkkkkkkkkkkkkkkkk.</p>
+          <br>
+          <h2> texto </h2>
+          <div class="fakeimg" style="height:200px;">img</div>
+          <p>kkkkkkkkkkkkkkk..</p>
+          <p>kkkkkkkkkkkkkkkkkkkkkkkkkk.</p>
+      </div>
+        <div class="footer">
+          <h2> Site reservado por campo formoso copyright @2023</h2>
+        </div>
+    </body>
+</html>
